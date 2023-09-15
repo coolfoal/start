@@ -11,7 +11,7 @@ from time import ctime
 
 @route('/')
 def index(name):
-    return template('<b>Time: {{thetime}}</b>!', thetime=ctime()))
+    return template('<b>Time: {{thetime}}</b>!', thetime=ctime())
 
 @route('/hello/<name>')
 def hello(name):
